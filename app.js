@@ -1,15 +1,12 @@
-let inpt = document.getElementById("textInput");
-let upbtn=document.getElementById("upcs");
-let lwbtn=document.getElementById("lwcs");
-let dsply=document.getElementById("textOutput");
+let textInput = document.getElementById("textInput");
+let uppercaseButton=document.getElementById("upperCase");
+let lowercaseButton=document.getElementById("lowerCase");
+let display=document.getElementById("textOutput");
 
-upbtn.addEventListener("click",function(){
-    dsply.value=(inpt.value).toUpperCase();
+uppercaseButton.addEventListener("click",function(){
+    display.value=(textInput.value).toUpperCase();
 });
 
-lwbtn.addEventListener("click",function(){
-    dsply.value=(inpt.value).toLowerCase();
+lowercaseButton.addEventListener("click",function(){
+    display.value=(textInput.value).toLowerCase();
 });
-
-
-
